@@ -13,7 +13,8 @@ local v2="1"
 local workfolder="C:\TEMP\ealist-data\"
 local currentfolder=`"`=c(pwd)'"'
 
-do private.do
+findfile private.do
+do `'"`r(fn)'"'
 .s = .SuSo.new "$susoserver" "$susouser" "$susopassword" // from private.do
 
 // download data
